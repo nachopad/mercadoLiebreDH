@@ -1,0 +1,88 @@
+/*
+    //Paleta de colores//
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 40%;
+    margin: 15px;
+}
+
+.title-header {
+    padding: 13px;
+    text-align: center;
+}
+
+.search-bar {
+    margin: 0 15px;
+}
+
+.nav-container {
+    padding-bottom: 20px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items {
+    padding: 8px 0;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 43px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-banner img {
+   max-height: 100vh;
+   width: 100%;
+}
+
+.article-section img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    margin: 20px;
+    color: #666;
+}
+
+.footer-content i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
