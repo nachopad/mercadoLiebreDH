@@ -35,6 +35,7 @@
 }
 
 .nav-container {
+    display: none;
     padding-bottom: 20px;
 }
 
@@ -59,14 +60,58 @@
     margin: auto;
 }
 
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 .main-banner img {
-   max-height: 100vh;
-   width: 100%;
+    max-height: 100vh;
+    width: 100%;
+ }
+
+article {
+    padding: 10px 0;
+}
+
+.article-section {
+    padding: 15px;
+    background-color: #ebebeb;
 }
 
 .article-section img {
     width: 100%;
 }
+
+.section-title {
+    color: #666;
+}
+
+.article-description {
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+}
+
+.truck {
+    display: inline-block;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.off {
+    font-size: 14px;
+    color: #39b54a;
+}
+
+.article-description .description {
+    display: none;
+    color: #666;
+    font-size: 15px;
+    padding: 10px;
+}
+
 
 footer {
     display: flex;
@@ -85,4 +130,42 @@ footer {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+}
+
+@media (min-width: 361px) {
+    .nav-container {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    article img, .article-description {
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    }
+
+    .description {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .nav-container {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    article img, .article-description {
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    }
+
+    .description {
+        display: flex;
+    }
+
 }
