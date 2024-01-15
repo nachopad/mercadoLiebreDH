@@ -5,6 +5,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/** HEADER MOBILE **/
+
 .main-header {
     background-color: #EAC926;
 }
@@ -85,7 +87,9 @@
 
 .main-banner img {
     width: 100%;
- }
+}
+
+/** MAIN MOBILE **/
 
 main {
     max-width: 100%;
@@ -161,6 +165,7 @@ article {
     padding: 10px 0px;
 }
 
+/** FOOTER MOBILE **/
 
 footer {
     display: block;
@@ -181,7 +186,81 @@ footer {
     color: #1259c3;
 }
 
-@media (min-width: 769px) {
+/** REGISTER & LOGIN MOBILE **/
+
+.form-container {
+    background-color: #e6e6e6;
+    padding: 10px;
+}
+
+ .form-container label {
+    display: block;
+    margin: 13px 0;
+    font-weight: bolder;
+}
+
+ .form-container input, .form-container textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ .form-container .button-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+ .form-container .user-checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+ .form-container .interest-category-container {
+    text-align: left;
+    font-weight: lighter;
+}
+
+ .form-container .user-checkbox-container input {
+    width: 40px;
+}
+
+ .form-container .checkbox-label {
+    display: inline-block;
+}
+
+.interest-category-container div {
+    margin-bottom: 10px; 
+}
+
+ .form-container .interest-category-container input {
+    width: 40px;
+ }
+
+ .form-container input[type="checkbox"],
+ .form-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+ .form-container button {
+    background-color: #1259c3;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+
+ .form-container button:hover {
+    background-color: #103e85;
+ }
+ 
+
+@media (min-width: 768px) {
+
+    /** HEADER TABLETS **/
 
     .main-header-top-bar {
         flex-direction: row;
@@ -232,6 +311,8 @@ footer {
         margin-top: 0px;
     }
 
+    /** MAIN TABLETS **/
+
     article {
         width: calc(50% - 25px);
         margin: 10px;
@@ -241,13 +322,24 @@ footer {
         box-shadow: 0px 0px 5px rgb(100, 100, 100);
     }
 
+    /** FOOTER TABLETS **/
+
     .description {
         display: flex;
+    }
+
+    /** REGISTER & LOGIN TABLETS **/
+
+    .form-container {
+        padding: 20px 20%;
     }
 
 }
 
 @media (min-width: 1200px) {
+
+    /** HEADER DESKTOP **/
+
     .nav-container {
         display: flex;
         justify-content: space-between;
@@ -273,6 +365,8 @@ footer {
         margin: 0;
     }
 
+    /** MAIN DESKTOP **/
+
     article {
         width: calc(25% - 25px);
         margin: 10px;
@@ -282,8 +376,16 @@ footer {
         box-shadow: 0px 0px 5px rgb(100, 100, 100);
     }
 
+    /** FOOTER DESKTOP **/
+
     .description {
         display: flex;
+    }
+
+    /** REGISTER DESKTOP **/
+
+    .form-container {
+        padding: 20px 25%;
     }
 
 }
