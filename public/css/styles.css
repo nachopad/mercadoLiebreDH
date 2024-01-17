@@ -43,6 +43,11 @@
     border-radius: 0px 5px 5px 0;
     cursor: pointer;
     margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #0022AA;
 }
 
 .search-bar button i {
@@ -62,7 +67,14 @@
 
 .nav-container a {
     text-decoration: none;
+}
+
+.nav-container ul li {
     color: black;
+}
+
+.nav-container ul li a:hover {
+    font-weight: 600;
 }
 
 .nav-items {
@@ -102,7 +114,13 @@ section.article-section header {
 
 article {
     width: 100%;
-    padding: 10px 0;
+    margin: 10px 0;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+}
+
+article:hover {
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 
 .article-section {
@@ -143,6 +161,19 @@ article {
     top: -15px;
 }
 
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+.truck:hover {
+    animation: rotateAnimation 0.5s ease forwards;
+}
+
 .price {
     margin: 0;
     font-size: 18px;
@@ -165,14 +196,19 @@ article {
     padding: 10px 0px;
 }
 
+.article-section article:hover .description {
+    display: flex;
+}
+
 /** FOOTER MOBILE **/
 
 footer {
     display: block;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    font-size: 12px;
 }
 
 .footer-content {
@@ -184,6 +220,11 @@ footer {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+    transition: color 0.3s ease;
+}
+
+.footer-content:hover i {
+    color: #EAC926;
 }
 
 /** REGISTER & LOGIN MOBILE **/
@@ -251,10 +292,11 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
  }
 
  .form-container button:hover {
-    background-color: #103e85;
+    background-color: #0022AA;
  }
  
 
@@ -318,15 +360,8 @@ footer {
         margin: 10px;
     }
 
-    article img, .article-description {
-        box-shadow: 0px 0px 5px rgb(100, 100, 100);
-    }
-
     /** FOOTER TABLETS **/
 
-    .description {
-        display: flex;
-    }
 
     /** REGISTER & LOGIN TABLETS **/
 
@@ -372,16 +407,23 @@ footer {
         margin: 10px;
     }
 
-    article img, .article-description {
-        box-shadow: 0px 0px 5px rgb(100, 100, 100);
-    }
-
     /** FOOTER DESKTOP **/
 
-    .description {
+    footer {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
+    .footer-content {
+        max-width: 30%;
+    }
+
+    .footer-content:last-child {
+        width: 100%;
+    }
+    
     /** REGISTER DESKTOP **/
 
     .form-container {
