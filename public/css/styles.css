@@ -30,8 +30,14 @@
 .search-bar input {
     width: 80%; 
     padding: 10px;
-    border: 1px solid #1259c3;
+    border: 2px solid white;
     border-radius: 5px 0px 0px 5px;
+    transition: border-color 1s;
+}
+
+.search-bar input:focus {
+    border: 2px solid #1259c3;
+    outline: none;
 }
 
 .search-bar button {
@@ -67,6 +73,7 @@
 
 .nav-container a {
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 .nav-container ul li {
@@ -74,7 +81,7 @@
 }
 
 .nav-container ul li a:hover {
-    font-weight: 600;
+    color: #1259c3;
 }
 
 .nav-items {
@@ -140,7 +147,6 @@ article:hover {
 }
 
 .article-description {
-    border-top: 1px solid #ebebeb;
     background-color: #ffffff;
     position: relative;
     padding: 15px 10px;
@@ -178,7 +184,7 @@ article:hover {
     margin: 0;
     font-size: 18px;
     color: #03264C;
-    width: 30%;
+    width: 40%;
     float: left;
     margin-right: 1em;
 }
@@ -243,8 +249,14 @@ footer {
  .form-container input, .form-container textarea {
     width: 100%;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid white;
     border-radius: 4px;
+    transition: border-color 1s;
+}
+
+.form-container input:focus, .form-container textarea:focus {
+    border: 2px solid #1259c3;
+    outline: none;
 }
 
  .form-container .button-container {
@@ -292,7 +304,7 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
  }
 
  .form-container button:hover {
